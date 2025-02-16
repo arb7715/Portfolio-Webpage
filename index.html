@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .clip-path-custom {
+        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Desktop View -->
+    <!--  -->
+    <!--  -->
+    <div
+      class="px-[4%] py-[1%] flex justify-between fixed top-0 w-full md:flex hidden bg-gradient-to-b from-black/100 to-[#d7d7d7]/20 z-50"
+    >
+      <div class="rounded-full bg-white p-1 active:scale-100 hover:scale-115">
+        <a href="#" rel="noopener noreferrer"
+          ><img src="logo 1.png" class="w-10 h-auto" alt="Image"
+        /></a>
+      </div>
+      <div>
+        <div class="flex gap-8 justify-center">
+          <div>
+            <a
+              class="bg-[#FFFFFF] w-30 rounded-full px-4 text-sm py-2 font-[Montserrat] hover:bg-[#1A1A2E] hover:text-white active:scale-90"
+              href="#aboutme"
+              rel="noopener noreferrer"
+            >
+              About me
+            </a>
+          </div>
+          <div>
+            <a
+              class="bg-[#FFFFFF] w-30 rounded-full px-5 text-sm py-2 font-[Montserrat] hover:bg-[#1A1A2E] hover:text-white active:scale-90"
+              href="#skills"
+              rel="noopener noreferrer"
+            >
+              Skills
+            </a>
+          </div>
+          <div>
+            <a
+              class="bg-[#FFFFFF] w-30 rounded-full px-5 text-sm py-2 font-[Montserrat] hover:bg-[#1A1A2E] hover:text-white active:scale-90"
+              href="#portfolio"
+              rel="noopener noreferrer"
+            >
+              Portfolio
+            </a>
+          </div>
+          <div>
+            <a
+              class="bg-[#FFFFFF] w-30 rounded-full px-3 text-sm py-2 font-[Montserrat] hover:bg-[#1A1A2E] hover:text-white active:scale-90"
+              href="#contact"
+              rel="noopener noreferrer"
+            >
+              CONTACT ME
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="min-h-screen w-full md:grid hidden"
+      id="desktopTop"
+      style="
+        background: linear-gradient(
+          99.67deg,
+          #d7d7d7 0%,
+          #d7d7d7 49.9%,
+          black 49.99%,
+          black 100%
+        );
+      "
+      id=""
+    >
+      <div class="grid grid-cols-[50%_50%] mx-[4%] max-h-[100%]">
+        <div class="font-[Raleway] flex justify-center flex-col">
+          <div>
+            <div class="font-bold text-2xl">Hi, I am</div>
+            <div class="my-15">
+              <h1 class="font-bold text-5xl">Ahsan Raza</h1>
+              <h1 class="text-[#909090] font-extrabold text-xl">
+                Front-end Developer / UI Designer
+              </h1>
+            </div>
+            <div class="flex gap-8">
+              <div
+                class="bg-[#C4C4C4] p-1 rounded-md shadow-[3px_6px_8px_rgba(100,100,100,0.4)] hover:scale-105 active:scale-90"
+              >
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=i221105@nu.edu.pk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="mailVector.png" class="w-10 h-auto" alt="Image"
+                /></a>
+              </div>
+              <div
+                class="bg-[#C4C4C4] p-1 rounded-md shadow-[3px_6px_8px_rgba(100,100,100,0.4)] hover:scale-105 active:scale-90"
+              >
+                <a
+                  href="https://github.com/arb7715"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="githubVector.png" class="w-10 h-auto" alt="Image" />
+                </a>
+              </div>
+              <div
+                class="bg-[#C4C4C4] p-1 rounded-md shadow-[3px_6px_8px_rgba(100,100,100,0.4)] hover:scale-105 active:scale-90"
+              >
+                <a
+                  href="https://www.linkedin.com/in/ahsanraza11/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="linkedInVector.png"
+                    class="w-10 h-auto"
+                    alt="Image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-end flex-col">
+          <img src="programmer.png" class="w-[100%] h-auto" alt="Image" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="md:flex hidden bg-[url(background.png)] w-full px-[4%] flex justify-between items-center gap-8"
+    >
+      <div
+        class="text-white font-[Montserrat] flex flex-col justify-center items-start py-8"
+      >
+        <h1 class="text-3xl tracking-widest font-bold font-[Montserrat]">
+          IT Berries
+        </h1>
+        <p class="py-8 font-[Open_Sans]">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+          quae, soluta quidem natus, optio eveniet consectetur blanditiis maxime
+          recusandae odio fugiat odit! Repellat totam perspiciatis suscipit quae
+          est laudantium dolor excepturi error vel sapiente impedit consequatur
+          rerum reiciendis facilis, quo laboriosam illo sed placeat. Ut mollitia
+          error dolor illum veniam non qui placeat quaerat quas, blanditiis
+          temporibus tempore quibusdam! Laborum assumenda qui earum non ab
+          reprehenderit corporis saepe, tempore illum nam nemo quis vero quos
+          minima voluptatem, similique aut, cupiditate ut corrupti explicabo.
+          Deserunt atque nulla ut minus sint consequatur facilis, sequi
+          reprehenderit, saepe animi magnam quod recusandae, error quas?
+        </p>
+        <button
+          class="border-x-4 border-white px-4 py-1 hover:scale-90 active:scale-80 font-semibold"
+        >
+          READ MORE
+        </button>
+      </div>
+      <img src="ITB.png" class="w-50 h-auto" alt="Image" />
+    </div>
+    <!-- Mobile View -->
+    <!--  -->
+    <!--  -->
+    <div class="flex md:hidden" id="mobileTop">
+      <div
+        class="px-[4%] py-[2%] flex justify-between items-center fixed top-0 w-full z-50 bg-gradient-to-b from-black/100 to-[#d7d7d7]/20"
+      >
+        <a href="#" rel="noopener noreferrer"
+          ><img
+            src="logo 2.png"
+            class="w-10 h-auto hover:scale-115 active:scale-90"
+            alt="Image"
+        /></a>
+
+        <img
+          src="Group 8.png"
+          class="w-5 h-5 hover:scale-130 active:scale-90"
+          alt="Image"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col md:hidden">
+      <div
+        class="relative min-h-screen w-full bg-black flex flex-col justify-end items-end"
+      >
+        <div class="bg-black flex-1"></div>
+        <img
+          src="profile.png"
+          class="w-full h-full flex-2 object-cover"
+          alt="Image"
+        />
+        <div
+          class="absolute bottom-0 left-0 w-full flex h-[27%] justify-between gap-auto px-[4%] z-10"
+        >
+          <div
+            class="flex flex-col justify-center items-start font-[Raleway] text-white px-[4%]"
+          >
+            <h1 class="text-xl">Hi, I am</h1>
+            <h1 class="font-bold text-4xl py-2">Ahsan Raza</h1>
+            <h1 class="font-bold text-m">Front-end Developer / UI Designer</h1>
+          </div>
+          <div class="flex flex-col justify-evenly items-end">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=i221105@nu.edu.pk"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="cib_mail-ru.png"
+                class="w-10 h-auto hover:scale-115 active:scale-90"
+                alt="Image"
+              />
+            </a>
+            <a
+              href="https://github.com/arb7715"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="ant-design_github-filled.png"
+                class="w-10 h-auto hover:scale-115 active:scale-90"
+                alt="Image"
+            /></a>
+
+            <a
+              href="https://www.linkedin.com/in/ahsanraza11/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="entypo-social_linkedin-with-circle.png"
+                class="w-10 h-auto hover:scale-115 active:scale-90"
+                alt="Image"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-full h-[35%] bg-gradient-to-b from-black/90 to-black/90 clip-path-custom"
+        ></div>
+      </div>
+    </div>
+
+    <div class="flex md:hidden bg-[url(background.png)] w-full px-[10%]">
+      <div
+        class="relative text-white font-[Montserrat] flex flex-col justify-center items-center py-8"
+      >
+        <h1 class="text-3xl tracking-widest font-bold font-[Montserrat] z-1">
+          IT Berries
+        </h1>
+        <p class="py-8 font-[Open_Sans] z-1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+          quae, soluta quidem natus, optio eveniet consectetur blanditiis maxime
+          recusandae odio fugiat odit! Repellat totam perspiciatis suscipit quae
+          est laudantium dolor excepturi error vel sapiente impedit consequatur
+          rerum reiciendis facilis, quo laboriosam illo sed placeat. Ut mollitia
+          error dolor illum veniam non qui placeat quaerat quas, blanditiis
+          temporibus tempore quibusdam! Laborum assumenda qui earum non ab
+          reprehenderit corporis saepe, tempore illum nam nemo quis vero quos
+          minima voluptatem, similique aut, cupiditate ut corrupti explicabo.
+          Deserunt atque nulla ut minus sint consequatur facilis, sequi
+          reprehenderit, saepe animi magnam quod recusandae, error quas?
+        </p>
+        <button
+          class="border-x-4 border-white px-4 py-1 hover:scale-90 active:scale-80 font-semibold z-1"
+        >
+          READ MORE
+        </button>
+        <img
+          src="ITB.png"
+          alt="image"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-70 h-auto z-0"
+        />
+      </div>
+    </div>
+
+    <!-- Desktop/Mobile View -->
+    <!--  -->
+    <!--  -->
+    <div
+      class="bg-[#d7d7d7] px-[20%] py-10 flex flex-col justify-evenly items-center"
+    >
+      <div
+        class="w-75 px-3 py-5 border-[#000000] border-6 font-[Montserrat] text-3xl tracking-[0.3em] font-bold text-center"
+        id="aboutme"
+      >
+        ABOUT ME
+      </div>
+      <div
+        class="text-center font-[Open_Sans] font-regular text-[#050505] py-15"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        deserunt cupiditate nostrum cumque? Officia qui, saepe nisi rerum iste
+        voluptates.
+      </div>
+      <button
+        class="font-[Montserrat] border-x-4 border-[#000000] text-[#000000] px-4 py-1 hover:scale-90 active:scale-80 font-semibold"
+      >
+        EXPLORE
+      </button>
+      <img src="separatorBlack 1.png" class="w-50 h-auto py-15" alt="Image" />
+      <div class="flex justify-between flex-wrap gap-8">
+        <div
+          class="w-full relative font-[Montserrat] text-[#000000] pl-8 pt-5 md:flex-1"
+        >
+          <h1 class="font-bold text-2xl tracking-widest">DESIGN</h1>
+          <h1 class="py-5 px-2 font-[Open_Sans]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            ut illo excepturi fugit obcaecati culpa voluptates, rem maiores
+            similique. Recusandae?
+          </h1>
+          <img
+            src="design.png"
+            class="absolute top-0 left-0 w-15 h-auto"
+            alt="Image"
+          />
+        </div>
+        <div
+          class="w-full relative font-[Montserrat] text-[#000000] pl-8 pt-5 md:flex-1"
+        >
+          <h1 class="font-bold text-2xl tracking-widest">DEVELOPMENT</h1>
+          <h1 class="py-5 font-[Open_Sans]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            ut illo excepturi fugit obcaecati culpa voluptates, rem maiores
+            similique. Recusandae?
+          </h1>
+          <img
+            src="development.png"
+            class="absolute top-0 left-0 w-15 h-auto"
+            alt="Image"
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center w-full font-[Montserrat] text-[#000000] pl-8 pt-4"
+      >
+        <div class="pt-4 pl-8 relative">
+          <h1 class="max-md:self-start font-bold text-2xl tracking-widest">
+            MAINTENANCE
+          </h1>
+          <img
+            src="maintenance.png"
+            class="absolute top-0 left-0 w-15 h-auto"
+            alt="Image"
+          />
+        </div>
+
+        <h1 class="py-5 font-[Open_Sans]">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+          ut illo excepturi fugit obcaecati culpa voluptates, rem maiores
+          similique. Recusandae?
+        </h1>
+      </div>
+      <img src="separatorBlack 1.png" class="w-50 h-auto py-15" alt="Image" />
+      <div
+        class="w-75 px-3 py-5 border-[#000000] border-6 font-[Montserrat] text-3xl tracking-[0.3em] font-bold text-center"
+        id="skills"
+      >
+        SKILLS
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <div
+          class="self-start py-20 font-[Montserrat] text-2xl sm:text-3xl tracking-widest font-bold"
+        >
+          USING NOW:
+        </div>
+      </div>
+
+      <div
+        class="w-full grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <img src="html5.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">HTML5</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="css3.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">CSS3</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="sass.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">SASS</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="javaScript.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">JAVASCRIPT</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="react.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">REACT</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="bootstrap-solid 1.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">BOOTSTRAP</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="Git-Icon-1788C 1.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">GIT</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="figma.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">FIGMA</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <div
+          class="self-start py-20 font-[Montserrat] text-2xl sm:text-3xl tracking-widest font-bold"
+        >
+          LEARNING:
+        </div>
+      </div>
+
+      <div
+        class="w-full grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <img src="nodeJS.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">NODEJS</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="mySQL.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">MySQL</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="mongoDB.png" class="w-5 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">MONGODB</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="typeScript.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">TYPESCRIPT</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <div
+          class="self-start py-20 font-[Montserrat] text-2xl sm:text-3xl tracking-widest font-bold text-center"
+        >
+          OTHER SKILLS:
+        </div>
+      </div>
+
+      <div
+        class="w-full grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <img src="eng.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">ANGIELSKI C1/C2</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="hiszp.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">HISZPANSKI B1/B2</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="cpp.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">C++</div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="c.png" class="w-10 h-auto" alt="Image" />
+
+          <div class="font-[Montserrat] tracking-wide">C</div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-[url(PortfolioBG.png)] bg-cover bg-center w-full h-auto flex justify-center items-center py-20"
+      id="portfolio"
+    >
+      <div
+        class="w-70 py-5 border-[#000000] border-6 font-[Montserrat] text-2xl tracking-[0.3em] font-bold text-center"
+      >
+        PORTFOLIO
+      </div>
+    </div>
+    <div class="bg-[#1A1A1A] py-8"></div>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-full">
+      <img src="Project1.png" class="w-full h-full" alt="Image" />
+      <img src="Project2.png" class="w-full h-full" alt="Image" />
+      <img src="Project3.png" class="w-full h-full" alt="Image" />
+      <img src="Project4.png" class="w-full h-full" alt="Image" />
+      <img src="Project5.png" class="w-full h-full" alt="Image" />
+      <img src="Project6.png" class="w-full h-full" alt="Image" />
+    </div>
+    <div
+      class="flex justify-center items-center font-[Montserrat] text-[#FFFBFB] bg-[#1A1A1A] py-5"
+    >
+      <h1>And many more to come!</h1>
+    </div>
+    <div
+      class="bg-[#D7D7D7] w-full flex flex-col justify-center items-center py-20"
+    >
+      <div
+        class="w-70 py-5 border-[#000000] border-6 font-[Montserrat] text-2xl tracking-[0.3em] font-bold text-center"
+        id="contact"
+      >
+        CONTACT
+      </div>
+
+      <p
+        class="text-[Open_Sans] text-[#000000] py-10 px-10 md:px-20 lg:px-90 text-center"
+      >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+        accusantium molestias dolorem a! Consequatur magni aliquid odio sunt
+        illo nobis?
+      </p>
+
+      <img src="separatorBlack 1.png" class="w-50 h-auto" alt="Image" />
+
+      <form action="" class="space-y-10 py-10 flex flex-col items-center">
+        <div>
+          <input
+            type="text"
+            class="border-l-4 border-b-4 w-60 sm:w-80 md:w-100 focus:outline-none font-[Montserrat] p-2 text-[#8B8B8B] border-[#000000] font-semibold"
+            required
+            placeholder="ENTER YOUR NAME*"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            class="border-l-4 border-b-4 w-60 sm:w-80 md:w-100 focus:outline-none font-[Montserrat] p-2 text-[#8B8B8B] border-[#000000] font-semibold"
+            required
+            placeholder="ENTER YOUR EMAIL*"
+          />
+        </div>
+        <div>
+          <input
+            type="tel"
+            class="border-l-4 border-b-4 w-60 sm:w-80 md:w-100 focus:outline-none font-[Montserrat] p-2 text-[#8B8B8B] border-[#000000] font-semibold"
+            placeholder="PHONE NUMBER"
+          />
+        </div>
+        <div>
+          <textarea
+            required
+            rows="5"
+            class="border-l-4 border-b-4 w-60 sm:w-80 md:w-100 focus:outline-none font-[Montserrat] p-2 text-[#8B8B8B] border-[#000000] font-semibold"
+            placeholder="YOUR MESSAGE*"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="font-[Montserrat] border-x-4 border-[#000000] text-[#000000] px-4 py-1 hover:scale-90 active:scale-80 font-semibold"
+        >
+          SUMBIT
+        </button>
+      </form>
+    </div>
+    <div
+      class="flex flex-col justify-center items-center font-[Montserrat] text-[#FFFBFB] bg-[#1A1A1A] py-5"
+    >
+      <a
+        class="flex md:hidden font-[Montserrat] font-bold flex flex-col justify-center items-center py-8 hover:scale-90 active:scale-80"
+        href="#mobileTop"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="ic_baseline-double-arrow.png"
+          class="w-5 h-auto"
+          alt="Image"
+        />
+        <h1>BACK TO TOP</h1>
+      </a>
+      <a
+        class="md:flex hidden font-[Montserrat] font-bold flex flex-col justify-center items-center py-8 hover:scale-90 active:scale-80"
+        href="#desktopTop"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="ic_baseline-double-arrow.png"
+          class="w-5 h-auto"
+          alt="Image"
+        />
+        <h1>BACK TO TOP</h1>
+      </a>
+      <div class="flex justify-center items-center gap-8">
+        <a
+          href="https://www.facebook.com/ahsan.bajwa.528"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="fb.png"
+            class="w-10 h-auto hover:scale-90 active:scale-80"
+            alt="Image"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/ahsanraza11/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Lin.png"
+            class="w-10 h-auto hover:scale-90 active:scale-80"
+            alt="Image"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/arb_11_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="insta.png"
+            class="w-10 h-auto hover:scale-90 active:scale-80"
+            alt="Image"
+          />
+        </a>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=i221105@nu.edu.pk"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><img
+            src="mail.png"
+            class="w-10 h-auto hover:scale-90 active:scale-80"
+            alt="Image"
+        /></a>
+      </div>
+
+      <div class="font-[Nunito] text-center font-bold py-8">
+        <p>
+          @2025 Ahsan Raza <span class="font-light">All Rights Reserved</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
